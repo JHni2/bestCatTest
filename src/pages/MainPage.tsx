@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Button } from 'react-bootstrap';
+import { Button, Image } from 'react-bootstrap';
 
 import mainCat from '../assets/cat/mainCat.jpg';
 import { useNavigate } from 'react-router-dom';
@@ -19,7 +19,7 @@ export default function MainPage(): React.ReactElement {
       <ContentsWrapper>
         <Title>나에게 맞는 주인님은?!</Title>
         <LogoImage>
-          <img
+          <Image
             className="rounded-circle"
             src={mainCat}
             width={350}

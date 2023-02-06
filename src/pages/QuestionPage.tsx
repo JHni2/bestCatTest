@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Button } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
+import { createSearchParams, useNavigate } from 'react-router-dom';
 
 import { QuestionData } from '../stores/Question/QuestionData';
 import Header from '../components/Header';
@@ -44,31 +44,14 @@ export default function QuestionPage(): React.ReactElement {
     }
     // 마지막 문제일 경우
     else {
-      navigate('/result');
+      const mbti = 'ENTJ';
+      navigate({
+        pathname: '/result',
+        search: `?${createSearchParams({
+          mbti: mbti,
+        })}`,
+      });
     }
-
-    /* newScore과 같은 코드
-    if (type === 'EI') {
-      // 기존 스코어에 더한 새로운 스코어 값
-      const addScore = totalScore[0].score + ans;
-      // 새로운 스코어를 반영한 새로운 객체
-      const object = { id: 'EI', score: addScore };
-      // 새로운 객체를 기존에 토탈 스코어 반영
-      totalScore.splice(0, 1, object);
-    } else if (type === 'SN') {
-      const addScore = totalScore[0].score + ans;
-      const object = { id: 'SN', score: addScore };
-      totalScore.splice(0, 1, object);
-    } else if (type === 'TF') {
-      const addScore = totalScore[0].score + ans;
-      const object = { id: 'TF', score: addScore };
-      totalScore.splice(0, 1, object);
-    } else {
-      const addScore = totalScore[0].score + ans;
-      const object = { id: 'JP', score: addScore };
-      totalScore.splice(0, 1, object);
-    }
-    */
   };
 
   return (
