@@ -51,8 +51,6 @@ export default function QuestionPage(): React.ReactElement {
         '',
       );
 
-      console.log({ mbti });
-
       navigate({
         pathname: '/result',
         search: `?${createSearchParams({
