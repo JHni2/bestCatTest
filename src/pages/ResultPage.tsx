@@ -1,5 +1,7 @@
 import React from 'react';
 
-export default function ResultPage() {
-  return <div>결과 페이지</div>;
+import { ReusltData } from '../stores/Result/ResultData';
+
+export default function ResultPage(): React.ReactElement {
+  return <img src={ReusltData[0].image} width={350} height={350} />;
 }

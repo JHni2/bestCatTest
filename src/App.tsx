@@ -1,11 +1,13 @@
 import React from 'react';
+import './App.css';
+
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 
 import MainPage from './pages/MainPage';
 import QuestionPage from './pages/QuestionPage';
 import ResultPage from './pages/ResultPage';
 
-function App() {
+function App(): React.ReactElement {
   return (
     <BrowserRouter>
       <Routes>
