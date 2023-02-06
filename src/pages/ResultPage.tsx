@@ -5,11 +5,16 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 
 import { ReusltData } from '../stores/Result/ResultData';
 import Header from '../components/Header';
-import mainCat from '../assets/cat/mainCat.jpg';
+import { IResult } from '../stores/Result/types';
 
 export default function ResultPage(): React.ReactElement {
   const [searchParams] = useSearchParams();
-  const mbti = searchParams.get('mbti');
+  const mbti = searchParams.get('mbti'); // 예비 집사의 mbti
+  const testResult = ReusltData.find((cat: IResult) => cat.best === mbti);
+  const friendCat = ReusltData.find(
+    (friend) => friend.best === testResult?.mbti,
+  );
+
   return (
     <>
       <Wrapper>
@@ -19,14 +24,22 @@ export default function ResultPage(): React.ReactElement {
           <ResultImage>
             <Image
               className="rounded-circle"
-              src={mainCat}
+              src={testResult?.image}
               width={350}
               height={350}
             />
           </ResultImage>
           <Desc>
-            예비 집사님과 찰떡궁합인 고양이는 {mbti}형 고양이 @@@입니다.
+            {testResult?.best}형 예비 집사님과 찰떡궁합인 고양이는 {mbti}형
+            고양이 {testResult?.name}
+            입니다.
           </Desc>
+          <Desc>
+            {testResult?.name} 고양이는 {testResult?.desc}
+          </Desc>
+          <BestDesc>
+            나의 고양이와 잘 맞는 형제 묘는 {friendCat?.name}입니다.
+          </BestDesc>
         </ContentsWrapper>
       </Wrapper>
     </>
@@ -37,7 +50,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: #fffacd;
   font-family: 'Jalnan';
 `;
@@ -47,7 +60,7 @@ const ContentsWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 20px 60px 20px 60px;
 `;
 
 const Title = styled.div`
@@ -63,5 +76,11 @@ const ResultImage = styled.div`
 `;
 
 const Desc = styled.div`
-  font-size: 20pt;
+  font-size: 15pt;
+`;
+
+const BestDesc = styled.div`
+  font-size: 15pt;
+  margin-top: 20px;
+  color: #ffa07a;
 `;
