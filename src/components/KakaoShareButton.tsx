@@ -12,7 +12,7 @@ export default function KakaoShareButton(props: Props) {
   const resultUrl = window.location.href;
 
   React.useEffect(() => {
-    if (!Kakao.isInitialized) {
+    if (!Kakao.isInitialized()) {
       Kakao.init('8a38a6a90095c068d1f93b2667118359');
     }
   }, []);
