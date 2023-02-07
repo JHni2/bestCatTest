@@ -71,9 +71,9 @@ export const QuestionData: IQuestion[] = [
   },
   {
     id: 10,
-    title: '고양이 사료를 급여하는 방법은?',
-    answera: '성과가 중요하지! 좋은 성과를 낸 병원.',
-    answerb: '사람이 중요해! 원장님 성격이 좋은 병원. ',
+    title: '고양이의 화장실 청소 주기를 정한다면?',
+    answera: '매일 고양이가 볼 일을 볼 때마다 바로 청소한다.',
+    answerb: '하루에 한 번씩 화장실을 청소한다. ',
     type: 'JP',
   },
   {
