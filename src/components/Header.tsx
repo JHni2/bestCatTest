@@ -18,7 +18,7 @@ export default function Header(props: Props) {
             label={`${Math.round(
               (props.questionNo / QuestionData.length) * 100,
             )}%`}
-            style={{ width: '100%', height: '30px' }}
+            style={{ width: '100%', height: '40px' }}
           />
         </ProgressWrapper>
       ) : (

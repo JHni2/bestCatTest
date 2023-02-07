@@ -86,6 +86,8 @@ const ContentsWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 780px;
+  margin-top: 20px;
   padding: 20px 60px 20px 60px;
 `;
 
