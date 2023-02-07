@@ -31,7 +31,7 @@ export default function MainPage(): React.ReactElement {
         <Button
           className="btn-danger"
           onClick={handleClickButton}
-          style={{ fontSize: 25, marginTop: 20, marginBottom: 20 }}
+          style={{ fontSize: 25, marginTop: 20, marginBottom: 50 }}
         >
           테스트 시작하기
         </Button>
@@ -45,7 +45,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: #fffacd;
   font-family: 'Jalnan';
 `;
