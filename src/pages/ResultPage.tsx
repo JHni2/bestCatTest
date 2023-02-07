@@ -6,14 +6,25 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 import { ReusltData } from '../stores/Result/ResultData';
 import Header from '../components/Header';
 import { IResult } from '../stores/Result/types';
+import KakaoShareButton from '../components/KakaoShareButton';
 
 export default function ResultPage(): React.ReactElement {
   const [searchParams] = useSearchParams();
   const mbti = searchParams.get('mbti'); // 예비 집사의 mbti
-  const testResult = ReusltData.find((cat: IResult) => cat.best === mbti);
+  const testResult: IResult = ReusltData.find(
+    (cat: IResult) => cat.best === mbti,
+  ) ?? {
+    id: 0,
+    name: '',
+    best: '',
+    mbti: '',
+    desc: '',
+    image: '',
+  };
   const friendCat = ReusltData.find(
     (friend) => friend.best === testResult?.mbti,
   );
+  const navigate = useNavigate();
 
   return (
     <>
@@ -40,6 +51,21 @@ export default function ResultPage(): React.ReactElement {
           <BestDesc>
             나의 고양이와 잘 맞는 형제 묘는 {friendCat?.name}입니다.
           </BestDesc>
+          <div style={{ marginBottom: 20 }}>
+            <Button
+              onClick={() => navigate('/')}
+              className="btn-danger"
+              style={{
+                width: 170,
+                marginTop: 30,
+                marginRight: 20,
+                marginBottom: 50,
+              }}
+            >
+              테스트 다시하기
+            </Button>
+            <KakaoShareButton data={testResult} />
+          </div>
         </ContentsWrapper>
       </Wrapper>
     </>
@@ -50,7 +76,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: #fffacd;
   font-family: 'Jalnan';
 `;
