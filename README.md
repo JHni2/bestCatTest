@@ -7,6 +7,10 @@
 프로젝트 기간 
 2023년 2월 6일 ~ 2월 7일
 
+[project github](https://github.com/JHni2/bestCatTest)
+
+[project notion](https://www.notion.so/MBTI-29c091c41d524720ad69492445930314?pvs=4)
+
 ## Project
 
 ### 프로젝트 소개
