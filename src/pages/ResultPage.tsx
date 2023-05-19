@@ -87,7 +87,7 @@ const ContentsWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 218px);
+  min-height: calc(100vh - 203px);
   margin-top: 20px;
   padding: 20px 60px 20px 60px;
   word-break: keep-all;

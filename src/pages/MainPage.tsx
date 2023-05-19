@@ -52,6 +52,7 @@ const Wrapper = styled.div`
   width: 100%;
   height: 100%;
   font-family: 'Jalnan';
+  margin-bottom: 40px;
 `;
 
 const ContentsWrapper = styled.div`
@@ -59,7 +60,7 @@ const ContentsWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 218px);
+  min-height: calc(100vh - 218px);
   margin-top: 20px;
 `;
 

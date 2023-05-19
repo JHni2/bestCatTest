@@ -46,7 +46,7 @@ const TitleWrapper = styled.div`
   align-items: center;
   justify-content: center;
   background: #ffa07a;
-  font-size: 40px;
+  font-size: 30px;
   padding: 1rem;
   text-align: center;
   word-break: keep-all;
