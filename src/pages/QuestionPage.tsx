@@ -70,8 +70,8 @@ export default function QuestionPage(): React.ReactElement {
             className="btn-warning"
             style={{
               width: '335px',
-              minHeight: '170px',
-              fontSize: '14pt',
+              minHeight: '130px',
+              fontSize: '17px',
             }}
             onClick={() => handleClickAnswer(1, QuestionData[questionNo].type)}
           >
@@ -81,8 +81,8 @@ export default function QuestionPage(): React.ReactElement {
             className="btn-warning"
             style={{
               width: '335px',
-              minHeight: '170px',
-              fontSize: '14pt',
+              minHeight: '130px',
+              fontSize: '17px',
             }}
             onClick={() => handleClickAnswer(0, QuestionData[questionNo].type)}
           >
@@ -114,7 +114,7 @@ const ContentsWrapper = styled.div`
 const Title = styled.div`
   margin-top: 20px;
   margin-bottom: 20px;
-  font-size: 22px;
+  font-size: 20px;
   text-align: center;
 `;
 
@@ -125,5 +125,5 @@ const ButtonGroup = styled.div`
   margin-top: 20px;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem;
 `;

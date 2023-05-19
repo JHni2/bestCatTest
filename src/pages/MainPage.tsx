@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Button, Image } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 
 import mainCat from '../assets/cat/mainCat.jpg';
 import { useNavigate } from 'react-router-dom';
@@ -32,10 +32,11 @@ export default function MainPage(): React.ReactElement {
           className="btn-danger"
           onClick={handleClickButton}
           style={{
-            fontSize: 25,
-            marginTop: 40,
-            paddingTop: 10,
-            paddingBottom: 10,
+            display: 'flex',
+            alignItems: 'center',
+            height: 50,
+            fontSize: 18,
+            marginTop: 20,
           }}
         >
           테스트 시작하기
@@ -65,18 +66,22 @@ const ContentsWrapper = styled.div`
 `;
 
 const Title = styled.div`
-  margin-top: 20px;
   margin-bottom: 20px;
-  font-size: 20pt;
+  font-size: 20px;
 `;
 
 const LogoImage = styled.div`
-  width: 350px;
-  heigth: 350px;
-  margin-top: 20px;
+  width: 280px;
+  height: 280px;
   margin-bottom: 40px;
 `;
 
+const Image = styled.img`
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+`;
+
 const Desc = styled.div`
-  font-size: 15pt;
+  font-size: 18px;
 `;

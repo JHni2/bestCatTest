@@ -51,12 +51,10 @@ export default function KakaoShareButton(props: Props) {
       onClick={shareKakao}
       className="btn-warning"
       style={{
-        paddingTop: 10,
-        paddingBottom: 10,
-        fontSize: 25,
-        marginTop: 30,
-        marginRight: 20,
-        marginBottom: 50,
+        display: 'flex',
+        alignItems: 'center',
+        height: 60,
+        fontSize: 18,
       }}
     >
       공유하기
