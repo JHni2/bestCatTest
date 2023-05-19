@@ -1,18 +1,11 @@
-# 나와 꼭 맞는 MBTI의 고양이는?!
+# 🐾 나와 꼭 맞는 MBTI의 고양이는?! 🐾
 
 ## Overview
 
-![image](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f21daa04-95a6-4381-b412-841d996b9951/Untitled.png)
-
-> **프로젝트명 
-🐾 나와 꼭 맞는 MBTI의 고양이는?! 🐾
+![image](https://github.com/JHni2/bestCatTest/assets/105628384/c7baacd1-3c8f-4ed7-bb82-903bf326d1b9)
 
 프로젝트 기간 
-2023년 2월 6일 ~ 2월 7일**
-> 
-> 
-> https://github.com/JHni2/bestCatTest
-> 
+2023년 2월 6일 ~ 2월 7일
 
 ## Project
 
@@ -38,22 +31,23 @@
 
 ### 프로젝트 주요 기능
 
-1. **나의 성향을 파악하는 12가지 질문! ****
+1. **나의 성향을 파악하는 12가지 질문! **
     - 나의 선택이 나와 꼭 맞는 고양이를 찾아줍니다!
     
-    ![chrome-capture-2023-4-19.gif](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b9accf95-1422-48c4-81f2-051cf65ad28b/chrome-capture-2023-4-19.gif)
+    ![image](https://github.com/JHni2/bestCatTest/assets/105628384/e2249e0e-f0e0-40af-8ec8-22ef0665f5d9)
+
     
 2.  **선택한 답변에 따른 16개의 결과!**
     - 나와 꼭 맞는 MBTI를 가진 고양이를 알려줘요!
     - 테스트를 다시 시작할 수 있고, 카카오톡으로 공유할 수 있어요!
     
-    ![image](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bc3025f0-ccef-46d7-9d3e-f9275122354f/Untitled.png)
+    ![image](https://github.com/JHni2/bestCatTest/assets/105628384/f6bec5a0-6580-45f4-b02a-ceef12ad0cf9)
     
-    ![image](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d13e8971-0e3b-4a8f-87e0-21c2dc05c4ba/Untitled.png)
+    ![image](https://github.com/JHni2/bestCatTest/assets/105628384/4cbfbcb9-c3ad-43dd-8f88-3eb5c134a05b)
     
-    ![image](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0de50217-c71c-4ee8-b1cd-20611e0f4e4d/Untitled.png)
+    ![image](https://github.com/JHni2/bestCatTest/assets/105628384/4d7ac003-19da-49ab-8468-3cac761327c6)
     
-    ![image](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/caf5ec72-389f-4b1e-a39a-8c15d185279e/Untitled.png)
+    ![image](https://github.com/JHni2/bestCatTest/assets/105628384/62710c5a-f759-4d2b-bef3-1b0ebb0ec786)
     
 
 ## 기술 특장점
