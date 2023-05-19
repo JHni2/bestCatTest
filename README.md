@@ -31,7 +31,7 @@
 
 ### 프로젝트 주요 기능
 
-1. **나의 성향을 파악하는 12가지 질문! **
+1. **나의 성향을 파악하는 12가지 질문!**
     - 나의 선택이 나와 꼭 맞는 고양이를 찾아줍니다!
     
     ![image](https://github.com/JHni2/bestCatTest/assets/105628384/e2249e0e-f0e0-40af-8ec8-22ef0665f5d9)
@@ -41,13 +41,13 @@
     - 나와 꼭 맞는 MBTI를 가진 고양이를 알려줘요!
     - 테스트를 다시 시작할 수 있고, 카카오톡으로 공유할 수 있어요!
     
-    ![image](https://github.com/JHni2/bestCatTest/assets/105628384/f6bec5a0-6580-45f4-b02a-ceef12ad0cf9)
+    ![image](https://github.com/JHni2/bestCatTest/assets/105628384/015afa02-3cb2-4ede-943d-868eabf18fe4)
     
-    ![image](https://github.com/JHni2/bestCatTest/assets/105628384/4cbfbcb9-c3ad-43dd-8f88-3eb5c134a05b)
+    ![image](https://github.com/JHni2/bestCatTest/assets/105628384/9f3ef11d-0608-4159-b243-c3c197847385)
     
-    ![image](https://github.com/JHni2/bestCatTest/assets/105628384/4d7ac003-19da-49ab-8468-3cac761327c6)
+    ![image](https://github.com/JHni2/bestCatTest/assets/105628384/58c594e0-9673-46e8-98f2-d73b84a63a22)
     
-    ![image](https://github.com/JHni2/bestCatTest/assets/105628384/62710c5a-f759-4d2b-bef3-1b0ebb0ec786)
+    ![image](https://github.com/JHni2/bestCatTest/assets/105628384/f0f2e12d-2475-436d-9c3a-7d782e6519d1)
     
 
 ## 기술 특장점
