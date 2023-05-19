@@ -18,12 +18,15 @@ export default function Header(props: Props) {
             label={`${Math.round(
               (props.questionNo / QuestionData.length) * 100,
             )}%`}
-            style={{ width: '100%', height: '40px' }}
+            style={{
+              width: '100%',
+              height: '40px',
+            }}
           />
         </ProgressWrapper>
       ) : (
         <TitleWrapper style={{ backgroundColor: '#ffa07a' }}>
-          🐾 예비 집사 판별기 🐾
+          🐾 나와 꼭 맞는 MBTI의 고양이는?! 🐾
         </TitleWrapper>
       )}
     </>
@@ -34,7 +37,7 @@ const ProgressWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 40pt;
+  font-size: 40px;
   padding: 20px 20px 20px 20px;
 `;
 
@@ -43,5 +46,8 @@ const TitleWrapper = styled.div`
   align-items: center;
   justify-content: center;
   background: #ffa07a;
-  font-size: 40pt;
+  font-size: 40px;
+  padding: 1rem;
+  text-align: center;
+  word-break: keep-all;
 `;

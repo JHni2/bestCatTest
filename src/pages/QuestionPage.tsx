@@ -69,8 +69,7 @@ export default function QuestionPage(): React.ReactElement {
           <Button
             className="btn-warning"
             style={{
-              marginRight: '20px',
-              width: '45%',
+              width: '400px',
               minHeight: '200px',
               fontSize: '14pt',
             }}
@@ -81,7 +80,7 @@ export default function QuestionPage(): React.ReactElement {
           <Button
             className="btn-warning"
             style={{
-              width: '45%',
+              width: '400px',
               minHeight: '200px',
               fontSize: '14pt',
             }}
@@ -100,7 +99,6 @@ const Wrapper = styled.div`
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background: #fffacd;
   font-family: 'Jalnan';
 `;
 
@@ -109,14 +107,15 @@ const ContentsWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 780px;
-  margin-top: 20px;
+  height: calc(100vh - 186px);
   padding: 20px;
 `;
 
 const Title = styled.div`
   margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 20pt;
+  text-align: center;
 `;
 
 const ButtonGroup = styled.div`
@@ -124,4 +123,7 @@ const ButtonGroup = styled.div`
   flex-direction: row;
   align-items: center;
   margin-top: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 `;

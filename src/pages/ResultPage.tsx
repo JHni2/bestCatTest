@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Button, Image } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 
 import { ReusltData } from '../stores/Result/ResultData';
@@ -51,12 +51,14 @@ export default function ResultPage(): React.ReactElement {
           <BestDesc>
             나의 고양이와 잘 맞는 형제 묘는 {friendCat?.name}입니다.
           </BestDesc>
-          <div style={{ marginBottom: 20 }}>
+          <div style={{ marginBottom: 20, display: 'flex' }}>
             <Button
               onClick={() => navigate('/')}
               className="btn-danger"
               style={{
-                width: 170,
+                paddingTop: 10,
+                paddingBottom: 10,
+                fontSize: 25,
                 marginTop: 30,
                 marginRight: 20,
                 marginBottom: 50,
@@ -77,7 +79,6 @@ const Wrapper = styled.div`
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background: #fffacd;
   font-family: 'Jalnan';
 `;
 
@@ -86,21 +87,28 @@ const ContentsWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 780px;
+  height: calc(100vh - 218px);
   margin-top: 20px;
   padding: 20px 60px 20px 60px;
+  word-break: keep-all;
+  text-align: center;
 `;
 
 const Title = styled.div`
   margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 20pt;
 `;
 
 const ResultImage = styled.div`
-  width: 200;
-  heigth: 200;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  width: 350px;
+  heigth: 350px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+`;
+
+const Image = styled.img`
+  object-fit: cover;
 `;
 
 const Desc = styled.div`

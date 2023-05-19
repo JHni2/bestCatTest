@@ -51,7 +51,9 @@ export default function KakaoShareButton(props: Props) {
       onClick={shareKakao}
       className="btn-warning"
       style={{
-        width: 170,
+        paddingTop: 10,
+        paddingBottom: 10,
+        fontSize: 25,
         marginTop: 30,
         marginRight: 20,
         marginBottom: 50,
